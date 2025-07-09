@@ -1,8 +1,10 @@
+import 'package:flutter_app/views/pages/BusinessPage.dart';
 import 'package:flutter_app/views/pages/Cards.dart';
 import 'package:flutter_app/views/pages/GeneralPage.dart';
 import 'package:flutter_app/views/pages/It.dart';
 import 'package:flutter_app/views/pages/Manage.dart';
 import 'package:flutter_app/views/pages/Profile.dart';
+import 'package:flutter_app/views/pages/summary.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
@@ -10,7 +12,7 @@ class AppRoutes {
     GetPage(
       name: '/',
       page: () => const GeneralPage(),
-      transition: Transition.noTransition,  // <-- No animation
+      transition: Transition.noTransition, // <-- No animation
     ),
     GetPage(
       name: '/Card',
@@ -30,6 +32,16 @@ class AppRoutes {
     GetPage(
       name: '/Profile',
       page: () => const Profile(),
+      transition: Transition.noTransition,
+    ),
+    GetPage(
+      name: '/Summary',
+      page: () => Summary(),
+      transition: Transition.noTransition,
+    ),
+    GetPage(
+      name: '/BusinessPage',
+      page: () =>  BusinessPage(),
       transition: Transition.noTransition,
     ),
   ];

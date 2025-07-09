@@ -56,7 +56,7 @@ class BottomNavBar extends StatelessWidget {
       final labelLeft = itemWidth * currentIndex + itemWidth / 2;
 
       return SizedBox(
-        height: 185.h,
+        height: 1.h,
         child: Stack(
           clipBehavior: Clip.none,
           children: [
@@ -70,7 +70,7 @@ class BottomNavBar extends StatelessWidget {
                   CurvedNavigationBar(
                     index: currentIndex,
                     onTap: navController.navigateTo,
-                    backgroundColor: Colors.transparent,
+                    backgroundColor: const Color.fromARGB(0, 243, 42, 42),
                     color: const Color(0xFF191F2F),
                     items: navItems,
                     height: 81.h,
